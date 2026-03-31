@@ -1,5 +1,6 @@
-# Instrukcja Polska
+# Gotowy skrypt do instalacji Docker oraz Docker Compose
 
+## 🇵🇱 Instrukcja Polska
 
 1)Ściągamy plik na serwer za pomocą komendy
 ```
