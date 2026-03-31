@@ -1,7 +1,7 @@
 #!/bin/sh
 # System
 echo "------------------------------------------"
-echo "Aktualizacja systemu/Update system"
+echo "Aktualizacja systemu / Update system"
 echo "------------------------------------------"
 sudo apt update -y
 sudo apt-get upgrade -y 
