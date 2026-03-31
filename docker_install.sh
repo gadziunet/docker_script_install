@@ -1,9 +1,15 @@
 #!/bin/sh
-
+# System
+echo "------------------------------------------"
+echo "Aktualizacja systemu/Update system"
+echo "------------------------------------------"
 sudo apt update -y
 sudo apt-get upgrade -y 
 
-# Docker Install
+# Docker
+echo "------------------------------------------"
+echo "Instalacja Docker / Install Docker"
+echo "------------------------------------------"
 
 sudo apt-get update -y
 sudo apt-get update
@@ -28,7 +34,11 @@ systemctl enable docker
 usermod -aG docker ${USER}
 systemctl restart docker
 
-# Docker Compose Install
+# Docker Compose
+echo "------------------------------------------"
+echo "Instalacja Docker Compose / Install Docker Compose"
+echo "------------------------------------------"
+
 curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
 chmod +x /usr/local/bin/docker-compose
