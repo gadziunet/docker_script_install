@@ -3,9 +3,14 @@
 
 1)Ściągamy plik na serwer za pomocą komendy
 ```
-curl -O https://github.com/gadziunet/docker_script_install/raw/refs/heads/main/docker_install.sh
+curl -L https://github.com/gadziunet/docker_script_install/raw/refs/heads/main/docker_install.sh -o docker_install.sh
 ```
-2)Po ściągnieciu włączamy skrypt
+2) Nadajemy uprawnienia
+```
+chmod +x docker_install.sh
+```
+
+3)Po ściągnieciu włączamy skrypt
 ```
 sudo ./docker_install.sh
 ```
